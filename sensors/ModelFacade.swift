@@ -24,6 +24,7 @@ class ModelFacade : ObservableObject {
 	    return instance! }
 	                          
 	init() { 
+		//init
 	}
 	      
 
