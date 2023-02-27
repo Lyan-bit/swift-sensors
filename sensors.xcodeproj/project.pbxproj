@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0231352D29AD402200F28416 /* ModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231352729AD402200F28416 /* ModelParser.swift */; };
+		0231352E29AD402200F28416 /* ModelFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231352829AD402200F28416 /* ModelFacade.swift */; };
+		0231352F29AD402200F28416 /* CollectSensorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231352929AD402200F28416 /* CollectSensorScreen.swift */; };
+		0231353029AD402200F28416 /* SensorsMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231352A29AD402200F28416 /* SensorsMain.swift */; };
+		0231353129AD402200F28416 /* AccelerometerClassificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231352B29AD402200F28416 /* AccelerometerClassificationScreen.swift */; };
+		0231353229AD402200F28416 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0231352C29AD402200F28416 /* ContentView.swift */; };
+		02FD987229970B3400569C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02FD987129970B3400569C02 /* Assets.xcassets */; };
+		02FD987529970B3400569C02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02FD987429970B3400569C02 /* Preview Assets.xcassets */; };
+		02FD988929970EE300569C02 /* converted_HARmodel.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 02FD988829970EE300569C02 /* converted_HARmodel.tflite */; };
+		EB5D2123375C1AA6AE6DD9D6 /* Pods_sensors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4219B38119BFC08584F217 /* Pods_sensors.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0231352729AD402200F28416 /* ModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelParser.swift; sourceTree = "<group>"; };
+		0231352829AD402200F28416 /* ModelFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFacade.swift; sourceTree = "<group>"; };
+		0231352929AD402200F28416 /* CollectSensorScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectSensorScreen.swift; sourceTree = "<group>"; };
+		0231352A29AD402200F28416 /* SensorsMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsMain.swift; sourceTree = "<group>"; };
+		0231352B29AD402200F28416 /* AccelerometerClassificationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerClassificationScreen.swift; sourceTree = "<group>"; };
+		0231352C29AD402200F28416 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02FD986A29970B3300569C02 /* sensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FD987129970B3400569C02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02FD987429970B3400569C02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02FD987B29970B6800569C02 /* sensors-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sensors-Bridging-Header.h"; sourceTree = "<group>"; };
+		02FD988829970EE300569C02 /* converted_HARmodel.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = converted_HARmodel.tflite; sourceTree = "<group>"; };
+		4D4219B38119BFC08584F217 /* Pods_sensors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sensors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		538CD0C2BFD758C3B6C76103 /* Pods-sensors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sensors.debug.xcconfig"; path = "Target Support Files/Pods-sensors/Pods-sensors.debug.xcconfig"; sourceTree = "<group>"; };
+		D218D0D6E49FE50ED0685926 /* Pods-sensors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sensors.release.xcconfig"; path = "Target Support Files/Pods-sensors/Pods-sensors.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02FD986729970B3300569C02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5D2123375C1AA6AE6DD9D6 /* Pods_sensors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02FD986129970B3300569C02 = {
+			isa = PBXGroup;
+			children = (
+				02FD988829970EE300569C02 /* converted_HARmodel.tflite */,
+				02FD986C29970B3300569C02 /* sensors */,
+				02FD986B29970B3300569C02 /* Products */,
+				7A75BBEAD37FA8ADBEEF2680 /* Pods */,
+				8AF29AEB549A16A20DFB2C67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02FD986B29970B3300569C02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02FD986A29970B3300569C02 /* sensors.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02FD986C29970B3300569C02 /* sensors */ = {
+			isa = PBXGroup;
+			children = (
+				0231352B29AD402200F28416 /* AccelerometerClassificationScreen.swift */,
+				0231352929AD402200F28416 /* CollectSensorScreen.swift */,
+				0231352C29AD402200F28416 /* ContentView.swift */,
+				0231352829AD402200F28416 /* ModelFacade.swift */,
+				0231352729AD402200F28416 /* ModelParser.swift */,
+				0231352A29AD402200F28416 /* SensorsMain.swift */,
+				02FD987129970B3400569C02 /* Assets.xcassets */,
+				02FD987329970B3400569C02 /* Preview Content */,
+				02FD987B29970B6800569C02 /* sensors-Bridging-Header.h */,
+			);
+			path = sensors;
+			sourceTree = "<group>";
+		};
+		02FD987329970B3400569C02 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				02FD987429970B3400569C02 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A75BBEAD37FA8ADBEEF2680 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				538CD0C2BFD758C3B6C76103 /* Pods-sensors.debug.xcconfig */,
+				D218D0D6E49FE50ED0685926 /* Pods-sensors.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8AF29AEB549A16A20DFB2C67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D4219B38119BFC08584F217 /* Pods_sensors.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02FD986929970B3300569C02 /* sensors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02FD987829970B3400569C02 /* Build configuration list for PBXNativeTarget "sensors" */;
+			buildPhases = (
+				FEF86AE9A74F09DC960BDA92 /* [CP] Check Pods Manifest.lock */,
+				02FD986629970B3300569C02 /* Sources */,
+				02FD986729970B3300569C02 /* Frameworks */,
+				02FD986829970B3300569C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sensors;
+			productName = sensors;
+			productReference = 02FD986A29970B3300569C02 /* sensors.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02FD986229970B3300569C02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					02FD986929970B3300569C02 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+				};
+			};
+			buildConfigurationList = 02FD986529970B3300569C02 /* Build configuration list for PBXProject "sensors" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02FD986129970B3300569C02;
+			productRefGroup = 02FD986B29970B3300569C02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02FD986929970B3300569C02 /* sensors */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02FD986829970B3300569C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FD988929970EE300569C02 /* converted_HARmodel.tflite in Resources */,
+				02FD987529970B3400569C02 /* Preview Assets.xcassets in Resources */,
+				02FD987229970B3400569C02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FEF86AE9A74F09DC960BDA92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sensors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02FD986629970B3300569C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0231352D29AD402200F28416 /* ModelParser.swift in Sources */,
+				0231352E29AD402200F28416 /* ModelFacade.swift in Sources */,
+				0231353229AD402200F28416 /* ContentView.swift in Sources */,
+				0231353029AD402200F28416 /* SensorsMain.swift in Sources */,
+				0231352F29AD402200F28416 /* CollectSensorScreen.swift in Sources */,
+				0231353129AD402200F28416 /* AccelerometerClassificationScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02FD987629970B3400569C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02FD987729970B3400569C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02FD987929970B3400569C02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538CD0C2BFD758C3B6C76103 /* Pods-sensors.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sensors/Preview Content\"";
+				DEVELOPMENT_TEAM = NR2XNW22UL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyanalwakeel.sensors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "sensors/sensors-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02FD987A29970B3400569C02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D218D0D6E49FE50ED0685926 /* Pods-sensors.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sensors/Preview Content\"";
+				DEVELOPMENT_TEAM = NR2XNW22UL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyanalwakeel.sensors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "sensors/sensors-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02FD986529970B3300569C02 /* Build configuration list for PBXProject "sensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02FD987629970B3400569C02 /* Debug */,
+				02FD987729970B3400569C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02FD987829970B3400569C02 /* Build configuration list for PBXNativeTarget "sensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02FD987929970B3400569C02 /* Debug */,
+				02FD987A29970B3400569C02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02FD986229970B3300569C02 /* Project object */;
+}
